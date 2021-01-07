@@ -1,10 +1,6 @@
 <html>
 <body onload="go()">
 <script>
-if(document.cookie.indexOf('kex=0') >= 0)
-    document.location.href = 'index702.html';
-</script>
-<script>
 function print(){}
 
 var scriptCode = '';
@@ -36,10 +32,10 @@ window.midExploit = function()
     if(document.location.hash)
     {     
         var s = decodeURIComponent(document.location.hash.substr(3));
-        preloadScripts(['kex.js', s, PAYLOADS/cache.js', 'PAYLOADS/c-code.js'], go);
+        preloadScripts(['kex.js', s, 'PAYLOADS/cache.js', 'PAYLOADS/c-code.js'], go);
     }
     else
-        preloadScripts(['kex.js', PAYLOADS/cache.js', 'PAYLOADS/c-code.js'], go);
+        preloadScripts(['kex.js', 'PAYLOADS/cache.js', 'PAYLOADS/c-code.js'], go);
 }
 
 window.postExploit = function()
